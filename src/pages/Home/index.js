@@ -1,6 +1,13 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import {hotjarInitialization} from '../../utils/hotjar';
 
 function Home() {
+
+  useEffect(() => {
+    hotjarInitialization();
+  });
+
   return (
     <div style={{padding:"20px"}}>
 

@@ -1,6 +1,13 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import {hotjarInitialization} from '../../utils/hotjar';
 
 function NotFound() {
+
+  useEffect(() => {
+    hotjarInitialization();
+  });
+
   return (
     <>
       <h1>Not found 404</h1>
